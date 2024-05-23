@@ -23,7 +23,7 @@ for token in tokens:
         border=4,
     )
     # qr.add_data(f"https://example.net/#{token}")
-    qr.add_data(f"http://localhost/QR-Code-Tokens/#{token}")
+    qr.add_data(f"http://localhost/QR-Code-Tokens/#{token}") #change the link
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
     img.save(f"{token}.png")
