@@ -1,0 +1,100 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Token Access</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #666;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+        
+        .qr-code {
+            margin-top: 30px;
+        }
+        
+        .qr-code img {
+            max-width: 200px;
+        }
+    </style>
+    <script>
+        // Extract the token from the URL fragment
+        const token = window.location.hash.substring(1);
+
+        // Redirect to the processing script with the token as a query parameter
+        if (token) {
+            window.location.replace(`process.php?token=${token}`);
+        }
+    </script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>Hotel Food Menu</h1>
+        
+        <h2>Appetizers</h2>
+        <ul>
+            <li>Bruschetta</li>
+            <li>Calamari Fritti</li>
+            <li>Caprese Salad</li>
+        </ul>
+        
+        <h2>Main Courses</h2>
+        <ul>
+            <li>Grilled Salmon</li>
+            <li>Beef Tenderloin</li>
+            <li>Vegetable Lasagna</li>
+        </ul>
+        
+        <h2>Desserts</h2>
+        <ul>
+            <li>Tiramisu</li>
+            <li>Crème Brûlée</li>
+            <li>Chocolate Lava Cake</li>
+        </ul>
+        
+        <div class="qr-code">
+            <h2>To Order:</h2>
+            <p>Please scan the QR code on your table</p>
+            <img src="qr-code.png" alt="QR Code">
+        </div>
+    </div>
+    <!-- Your content here -->
+</body>
+</html>
