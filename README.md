@@ -23,7 +23,7 @@ This project demonstrates a secure method for accessing a website or web page us
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/secure-qr-code-access.git
+git clone https://github.com/Student408/QR-Code-Tokens.git
 ```
 
 2. Set up the database:
