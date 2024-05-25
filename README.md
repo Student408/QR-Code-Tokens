@@ -4,7 +4,7 @@ This project demonstrates a secure method for accessing a website or web page us
 
 ## Live Demo
 
-- [https://theloko.me/club-coffee/](https://studentoffers.great-site.net)
+- [Live](https://studentoffers.great-site.net)
 
 ## Features
 
